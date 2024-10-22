@@ -8,8 +8,10 @@ public class flashLight : MonoBehaviour
     [Tooltip("The spotlight for the flashlight")]
     public Light spotlight;
     [Tooltip("How long the enemy is stunned")]
-    public float freezeDuration = 5f;
+    public float freezeDuration = 100f;
     [Tooltip("The enemy's Rigidbody (make sure it is tagged 'enemy')")]
+    public Rigidbody enemyBody;
+    [Tooltip("The battery duration when filled with new battery")]
     public float fullBattery = 400f;
     [Tooltip("The battery duration. use this to set a start duration.")]
     public float batteryLife = 400f;
@@ -22,23 +24,30 @@ public class flashLight : MonoBehaviour
     public Slider battBar;
     [Tooltip("how fast the battery drains")]
     public float drainSpeed = 1;
-    public bool stunned = false;
+
+    private bool _isStunned;
+
+    public bool isStunned{
+        get {return _isStunned;}
+        set {_isStunned = value;}
+    }
 
     void Start()
     {
         if (grabBattTextUI != null)
-    {
-        grabBattTextUI.SetActive(false); 
-    }
+        {
+            grabBattTextUI.SetActive(false); 
+            }
 
-    // Initialize the slider
-    if (battBar != null)
-    {
-        battBar.maxValue = fullBattery;
-        battBar.value = batteryLife;
-    }
-    
-    flashLightOn = false;
+        // Initialize the slider
+        if (battBar != null)
+        {
+            battBar.maxValue = fullBattery;
+            battBar.value = batteryLife;
+            }
+            
+        flashLightOn = false;
+        spotlight.enabled = false;
     }
 
     void Update()
@@ -66,9 +75,9 @@ public class flashLight : MonoBehaviour
     // Coroutine to stun the enemy
     private IEnumerator stun()
     {
-        stunned = true;
+        isStunned = true;
         yield return new WaitForSeconds(freezeDuration);
-        stunned = false;
+        isStunned = false;
     }
 
     // Detect an enemy when the flashlight is on
@@ -76,7 +85,7 @@ public class flashLight : MonoBehaviour
     {
         if (flashLightOn && Input.GetMouseButtonDown(0)) // Left mouse button while flashlight is on
         {
-            Ray ray = new Ray(spotlight.transform.position, spotlight.transform.forward);
+            Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
@@ -104,7 +113,6 @@ public class flashLight : MonoBehaviour
             battBar.value = batteryLife;
         }
     }
-
 
 
     void grabBatt(GameObject other){
