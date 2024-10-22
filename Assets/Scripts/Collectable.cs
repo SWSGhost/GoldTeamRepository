@@ -26,8 +26,7 @@ public class Collectable : MonoBehaviour
 
     void Update()
     {
-        lookingAtCollectable();
-        CollectableCount(); 
+        lookingAtCollectable(); 
     }
 
     void FixedUpdate(){
@@ -46,6 +45,7 @@ public class Collectable : MonoBehaviour
         if (gameObject.CompareTag("Collectable")) 
        {
            gameObject.SetActive(false);
+           CollectableCount();
        } 
 
         if (collectTextUI != null)
