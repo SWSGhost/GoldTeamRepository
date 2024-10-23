@@ -28449,7 +28449,6 @@ MonoBehaviour:
   interactionDistance: 8
   WinScreen: {fileID: 0}
   numOfCollectables: 8
-<<<<<<< HEAD
 --- !u!1001 &549576733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28519,8 +28518,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1ad3b4d117249ac83c7ec68d1556da, type: 3}
-=======
->>>>>>> ab4f28c3cb95611f7b9ca9842715a56662eadc65
 --- !u!1001 &549683494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39329,9 +39326,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bed2c16fe8c3114383396babb213240, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1660593736}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bed2c16fe8c3114383396babb213240, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1660593737}
   m_SourcePrefab: {fileID: 100100000, guid: 1bed2c16fe8c3114383396babb213240, type: 3}
 --- !u!1 &771164879 stripped
 GameObject:
@@ -82107,34 +82101,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &1660593737
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660593731}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0049730814
-  m_Height: 0.05170373
-  m_Direction: 1
-  m_Center: {x: -0.00038425685, y: 0.02578785, z: 0.00024342297}
 --- !u!1 &1661119028 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4265605864920104725, guid: 73ba6d2620dff4e4c908280ac19e0cf3, type: 3}
