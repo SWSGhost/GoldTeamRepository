@@ -7,6 +7,7 @@ public class Collectable : MonoBehaviour
 {
     private float items = 0;
     public float collectableNum = 8;
+    public GameObject winScreen;
 
     void Start(){
         winScreen.SetActive(false);
@@ -14,7 +15,7 @@ public class Collectable : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         if (other.gameObject.CompareTag("Collectable")){
-             other.gameObject.SetActive(false)
+             other.gameObject.SetActive(false);
              items += 1; 
 
              if (items == collectableNum){
