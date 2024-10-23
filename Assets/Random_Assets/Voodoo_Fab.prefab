@@ -157,7 +157,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c0523466b586422cbee1e7bbe6c5991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextUI: {fileID: 0}
-  interactionDistance: 3
-  WinScreen: {fileID: 0}
-  numOfCollectables: 8
+  collectTextUI: {fileID: 4356559641648271636, guid: 113b2b01485884a3ba0f25ea62ab7edd, type: 3}
+  interactionDistance: 5
