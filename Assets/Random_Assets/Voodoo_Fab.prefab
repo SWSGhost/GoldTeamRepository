@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 3964117344422158594}
   - component: {fileID: 9108681951932489577}
   - component: {fileID: 2755171159250918384}
-  - component: {fileID: 2289643792791651874}
   - component: {fileID: 36019391134387582}
-  - component: {fileID: 4367004688125001719}
   - component: {fileID: 5606761225806714691}
   - component: {fileID: 7884122621882500573}
+  - component: {fileID: 6883085553532864974}
   m_Layer: 0
   m_Name: Voodoo_Fab
   m_TagString: Collectable
@@ -88,22 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2289643792791651874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400033310422452768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c0523466b586422cbee1e7bbe6c5991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectTextUI: {fileID: 4356559641648271636, guid: 113b2b01485884a3ba0f25ea62ab7edd, type: 3}
-  interactionDistance: 4
-  WinScreen: {fileID: 6553887351294102847, guid: 2074d0723eeb1174b8ad844c75c08703, type: 3}
-  numOfCollectables: 8
 --- !u!136 &36019391134387582
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -127,22 +110,6 @@ CapsuleCollider:
   m_Height: 5.977129
   m_Direction: 1
   m_Center: {x: 0, y: 3.0198293, z: -0.0019418001}
---- !u!114 &4367004688125001719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400033310422452768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c0523466b586422cbee1e7bbe6c5991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectTextUI: {fileID: 0}
-  interactionDistance: 8
-  WinScreen: {fileID: 0}
-  numOfCollectables: 8
 --- !u!114 &5606761225806714691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,3 +145,19 @@ CapsuleCollider:
   m_Height: 5.977129
   m_Direction: 1
   m_Center: {x: -0.00012207031, y: 3.0198293, z: -0.0019418001}
+--- !u!114 &6883085553532864974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400033310422452768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c0523466b586422cbee1e7bbe6c5991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectTextUI: {fileID: 0}
+  interactionDistance: 3
+  WinScreen: {fileID: 0}
+  numOfCollectables: 8

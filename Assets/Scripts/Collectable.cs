@@ -7,12 +7,15 @@ public class Collectable : MonoBehaviour
 {
     [Tooltip("UI text to show when the player can collect the item")]
     public GameObject collectTextUI; 
-    private float items = 0;
+    private float _items = 0;
     [Tooltip("Maximum distance to interact with the collectable")]
     public float interactionDistance = 3.0f;
-    [Tooltip("UI text to show when the player can collect the item")]
-    public GameObject WinScreen;
-    public float numOfCollectables = 8;
+    public float items{
+        get {return _items;}
+        set {_items = value;}
+    }
+    
+    
 
     void Start()
     {
@@ -29,15 +32,7 @@ public class Collectable : MonoBehaviour
         lookingAtCollectable(); 
     }
 
-    void FixedUpdate(){
-        
-    }
-
-    void CollectableCount(){
-        if (items == numOfCollectables){
-            WinScreen.SetActive(true);
-        }
-    }
+    
 
     void PickUp()
     {
@@ -45,7 +40,6 @@ public class Collectable : MonoBehaviour
         if (gameObject.CompareTag("Collectable")) 
        {
            gameObject.SetActive(false);
-           CollectableCount();
        } 
 
         if (collectTextUI != null)
