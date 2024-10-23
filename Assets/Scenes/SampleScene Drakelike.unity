@@ -39317,7 +39317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1bed2c16fe8c3114383396babb213240, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82083,7 +82083,7 @@ MonoBehaviour:
   speed: 7
   minDist: 1
   target: {fileID: 654505907}
-  flashLight: {fileID: 0}
+  flashLight: {fileID: 134198948}
 --- !u!54 &1660593736
 Rigidbody:
   m_ObjectHideFlags: 0
