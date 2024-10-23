@@ -21705,13 +21705,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 418539127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c0523466b586422cbee1e7bbe6c5991, type: 3}
+  m_Script: {fileID: 11500000, guid: 50570eedd0f6ffb4d988f06deae61294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectTextUI: {fileID: 1727767912}
-  interactionDistance: 3
-  WinScreen: {fileID: 0}
-  numOfCollectables: 8
 --- !u!1001 &418553305
 PrefabInstance:
   m_ObjectHideFlags: 0

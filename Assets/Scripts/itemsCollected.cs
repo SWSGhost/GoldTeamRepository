@@ -10,8 +10,10 @@ public class itemsCollected : MonoBehaviour
     [Tooltip("UI to show player then won")]
     public GameObject WinScreen;
 
-    
 
+    void start(){
+        WinScreen.SetActive(false);
+    }
     void FixedUpdate(){
         CollectableCount();
     }
